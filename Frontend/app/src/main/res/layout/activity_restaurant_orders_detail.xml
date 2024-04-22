@@ -22,7 +22,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/blue_accent"
+            android:background="@color/green_accent"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"/>
@@ -165,7 +165,7 @@
                 android:layout_weight="1"
                 android:text="TOTAL: "
                 android:textStyle="bold"
-                android:textColor="@color/blue"
+                android:textColor="@color/green"
                 android:textSize="20dp"/>
             <TextView
                 android:id="@+id/textview_total"
@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:text="S/.00.00"
                 android:textSize="20dp"
-                android:textColor="@color/blue_accent"/>
+                android:textColor="@color/green_accent"/>
         </LinearLayout>
 
         <Button
@@ -183,7 +183,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/reounded_button"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/green"
             android:text="Asignar repartidor"
             android:layout_marginBottom="20dp"
             android:visibility="gone"/>

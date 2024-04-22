@@ -1,6 +1,7 @@
 package com.optic.deliveryapp.activities.client.payments.payment_method
 
 import android.content.Intent
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -29,6 +30,7 @@ class ClientPaymentMethodActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
 
         imageViewMercadoPago?.setOnClickListener { goToMercadoPago() }
         imageViewPaypal?.setOnClickListener { goToPaypal() }

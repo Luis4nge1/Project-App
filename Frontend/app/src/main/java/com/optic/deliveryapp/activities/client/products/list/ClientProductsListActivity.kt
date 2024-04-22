@@ -1,9 +1,12 @@
 package com.optic.deliveryapp.activities.client.products.list
 
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.Gson
@@ -30,6 +33,8 @@ class ClientProductsListActivity : AppCompatActivity() {
 
     var idCategory: String? = null
 
+    var toolbar: Toolbar? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_client_products_list)
@@ -37,6 +42,14 @@ class ClientProductsListActivity : AppCompatActivity() {
         sharedPref = SharedPref(this)
 
         idCategory = intent.getStringExtra("idCategory")
+
+        toolbar = findViewById(R.id.toolbar)
+        toolbar?.title = "Ver productos"
+        toolbar?.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
+
 
         getUserFromSession()
         productsProvider = ProductsProvider(user?.sessionToken!!)

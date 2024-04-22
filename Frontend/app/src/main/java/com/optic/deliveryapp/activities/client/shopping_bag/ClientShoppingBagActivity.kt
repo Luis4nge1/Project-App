@@ -3,6 +3,7 @@ package com.optic.deliveryapp.activities.client.shopping_bag
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -48,6 +49,7 @@ class ClientShoppingBagActivity : AppCompatActivity() {
 
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
 
         recyclerViewShoppingBag?.layoutManager = LinearLayoutManager(this)
 

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.client.products.detail.ClientProductsDetailActivity">
 
+    <include layout="@layout/action_bar"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -99,7 +100,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/reounded_button"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/green"
         android:text="Agregar producto"
         android:layout_gravity="bottom"
         android:layout_marginBottom="20dp"/>

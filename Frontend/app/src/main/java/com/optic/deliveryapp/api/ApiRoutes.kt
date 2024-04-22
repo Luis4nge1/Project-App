@@ -8,7 +8,7 @@ import com.optic.deliveryapp.routes.ProductsRoutes
 import com.optic.deliveryapp.routes.UsersRoutes
 
 class ApiRoutes {
-    val API_URL = "http://192.168.1.36:3000/api/"
+    val API_URL = "http://192.168.42.83:3000/api/"
     val retrofit = RetrofitClient()
 
     fun getUsersRoutes(): UsersRoutes{

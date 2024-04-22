@@ -2,6 +2,7 @@ package com.optic.deliveryapp.activities.client.products.detail
 
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,12 +10,15 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
+import androidx.core.content.ContextCompat
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.optic.deliveryapp.R
+import com.optic.deliveryapp.R.id.toolbar
 import com.optic.deliveryapp.models.Product
 import com.optic.deliveryapp.utils.SharedPref
 
@@ -36,6 +40,8 @@ class ClientProductsDetailActivity : AppCompatActivity() {
     var counter = 1
     var productPrice = 0.0
 
+    var toolbar: Toolbar? = null
+
     var sharedPref: SharedPref? = null
     var selectedProducts = ArrayList<Product>()
 
@@ -45,6 +51,14 @@ class ClientProductsDetailActivity : AppCompatActivity() {
 
         product = gson.fromJson(intent.getStringExtra("product"), Product::class.java)
         sharedPref  = SharedPref(this)
+
+        toolbar = findViewById(R.id.toolbar)
+        toolbar?.title = product?.name
+        toolbar?.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
+
 
         imageSlider = findViewById(R.id.imageslider)
         textViewName = findViewById(R.id.textview_name)

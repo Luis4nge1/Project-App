@@ -2,6 +2,7 @@ package com.optic.deliveryapp.activities.delivery.orders.detail
 
 
 import android.content.Intent
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -74,6 +75,7 @@ class DeliveryOrdersDetailActivity : AppCompatActivity() {
         toolbar?.title = "Order #${order?.id}"
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
 
         textViewClient = findViewById(R.id.textview_client)
         textViewAddress = findViewById(R.id.textview_address)

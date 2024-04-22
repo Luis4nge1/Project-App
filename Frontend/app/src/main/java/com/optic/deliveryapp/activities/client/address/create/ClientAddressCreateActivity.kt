@@ -2,6 +2,7 @@ package com.optic.deliveryapp.activities.client.address.create
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -57,10 +58,11 @@ class ClientAddressCreateActivity : AppCompatActivity() {
         editTextNeighborhood = findViewById(R.id.edittext_neighborhood)
         buttonCreateAddress = findViewById(R.id.btn_create_address)
 
-        toolbar?.setTitleTextColor(ContextCompat.getColor(this, R.color.black))
+        toolbar?.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
         toolbar?.title = "Nueva dirección"
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
 
         editTextRefPoint?.setOnClickListener{ goToAddressMap()}
         buttonCreateAddress?.setOnClickListener { createAddress() }

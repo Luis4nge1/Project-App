@@ -31,7 +31,7 @@ class ClientOrdersFragment : Fragment() {
         tabLayout = myView?.findViewById(R.id.tab_layout)
 
         tabLayout?.setSelectedTabIndicatorColor(Color.LTGRAY)
-        tabLayout?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.blue))
+        tabLayout?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.green))
         tabLayout?.tabTextColors = ContextCompat.getColorStateList(requireContext(), R.color.white)
         tabLayout?.tabMode = TabLayout.MODE_SCROLLABLE
         tabLayout?.isInlineLabel = true

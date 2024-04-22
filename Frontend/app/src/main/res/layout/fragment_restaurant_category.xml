@@ -37,7 +37,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/reounded_button"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/green"
         android:text="Crear Categoría"
         android:layout_gravity="bottom"
         android:layout_marginBottom="90dp"/>

@@ -37,7 +37,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/reounded_button"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/green"
         android:text="Continuar"
         android:layout_gravity="bottom"
         android:layout_marginBottom="25dp"/>
@@ -47,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add_simple"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/green"
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="100dp"
         android:layout_marginRight="25dp"/>

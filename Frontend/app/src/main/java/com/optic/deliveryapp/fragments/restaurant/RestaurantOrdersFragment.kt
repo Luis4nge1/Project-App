@@ -12,7 +12,6 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.optic.deliveryapp.R
 import com.optic.deliveryapp.adapters.RestaurantTabsPagerAdapter
-import com.optic.deliveryapp.adapters.TabsPagerAdapter
 
 class RestaurantOrdersFragment : Fragment() {
 
@@ -32,7 +31,7 @@ class RestaurantOrdersFragment : Fragment() {
         tabLayout = myView?.findViewById(R.id.tab_layout)
 
         tabLayout?.setSelectedTabIndicatorColor(Color.LTGRAY)
-        tabLayout?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.blue))
+        tabLayout?.setBackgroundColor(ContextCompat.getColor(requireContext(), R.color.green))
         tabLayout?.tabTextColors = ContextCompat.getColorStateList(requireContext(), R.color.white)
         tabLayout?.tabMode = TabLayout.MODE_SCROLLABLE
         tabLayout?.isInlineLabel = true

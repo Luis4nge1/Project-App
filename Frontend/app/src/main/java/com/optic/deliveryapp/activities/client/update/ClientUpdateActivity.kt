@@ -1,6 +1,7 @@
 package com.optic.deliveryapp.activities.client.update
 
 import android.app.Activity
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -54,6 +55,7 @@ class ClientUpdateActivity : AppCompatActivity() {
         toolbar?.setTitleTextColor(ContextCompat.getColor(this, R.color.white))
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
 
         circleImageUser = findViewById(R.id.circleimage_user)
         editTextName = findViewById(R.id.edittext_name)

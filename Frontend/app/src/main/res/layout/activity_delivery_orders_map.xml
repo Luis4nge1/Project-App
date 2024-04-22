@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Vecindario:"
-                    android:textColor="@color/blue"/>
+                    android:textColor="@color/green"/>
                 <TextView
                     android:id="@+id/textview_neighborhood"
                     android:layout_width="wrap_content"
@@ -73,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dirección:"
-                    android:textColor="@color/blue"/>
+                    android:textColor="@color/green"/>
                 <TextView
                     android:id="@+id/textview_address"
                     android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cliente"
-                    android:textColor="@color/blue"/>
+                    android:textColor="@color/green"/>
                 <TextView
                     android:id="@id/textview_client"
                     android:layout_width="wrap_content"
@@ -147,7 +147,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/reounded_button"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/green"
             android:text="Entregar pedido"
             android:layout_gravity="bottom"
             android:layout_marginBottom="10dp"/>

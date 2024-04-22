@@ -1,6 +1,7 @@
 package com.optic.deliveryapp.activities.client.address.list
 
 import android.content.Intent
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -67,6 +68,7 @@ class ClientAddressListActivity : AppCompatActivity() {
         toolbar?.title = "Mis direcciones"
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar?.navigationIcon?.setColorFilter(ContextCompat.getColor(this, R.color.white), PorterDuff.Mode.SRC_ATOP)
 
         getUserFromSession()
 

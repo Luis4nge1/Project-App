@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Order"
-            android:background="@color/blue_accent"
+            android:background="@color/green_accent"
             android:padding="5dp"
             android:textAlignment="center"
             android:textColor="@color/white"/>
